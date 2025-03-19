@@ -45,3 +45,11 @@ li a {
   border-radius: 25px;
   cursor: pointer;
 }
+
+h1 span{
+  color: #04ddb2;
+}
+
+.button{
+  font-size: 16px;
+}
