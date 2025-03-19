@@ -46,10 +46,18 @@ li a {
   cursor: pointer;
 }
 
+h1, h2{
+  text-align: center;
+}
+
 h1 span{
   color: #04ddb2;
 }
 
 .button{
   font-size: 16px;
+}
+
+.title-text p{
+  text-align: center;
 }
