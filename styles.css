@@ -187,6 +187,7 @@ hr {
 }
 
 li a{
+<<<<<<< HEAD
   font-size: 12px;
 }
 
@@ -319,4 +320,7 @@ li a{
   .footer {
     gap: 60px;
   }
+=======
+  font-size: 14px;
+>>>>>>> ca473fb2165c0adf8d9e282eae362658ba2211a8
 }
