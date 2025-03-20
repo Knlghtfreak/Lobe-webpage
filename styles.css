@@ -64,20 +64,64 @@ h1 span {
 }
 
 .M-IMG {
-  width: 30vh;
+  width: 40em;
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
 }
 
 .video-box {
-  width: 40vh;
+  width: 50em;
   height: 100%;
   padding: 20px;
   display: flex;
   justify-content: center;
   background-color: #e9edef;
   border-radius: 9px;
+}
+
+.IMG {
+  position: relative;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: saturate(180%) blur(10px);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.play-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  --r: 5px;
+  height: 40px;
+  aspect-ratio: cos(30deg);
+  --_g: calc(tan(60deg) * var(--r)) left var(--r), #000 98%, #0000 101%;
+  -webkit-mask: conic-gradient(
+        from 60deg at calc(3 * var(--r) / 2 - 100%),
+        #000 60deg,
+        #0000 0
+      )
+      0 0 / calc(100% - 3 * var(--r) / 2) 100% no-repeat,
+    radial-gradient(
+      var(--r) at calc(100% - 2 * var(--r)) 50%,
+      #000 98%,
+      #0000 101%
+    ),
+    radial-gradient(var(--r) at top var(--_g)),
+    radial-gradient(var(--r) at bottom var(--_g));
+  clip-path: polygon(100% 50%, 0 100%, 0 0);
+  background: #fff;
 }
 
 .video-play {
