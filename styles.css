@@ -64,10 +64,9 @@ h1 span {
   text-align: center;
 }
 
-.title-text{
+.title-text {
   padding: 50px 0 0 0;
 }
-
 
 .M-IMG {
   width: 40em;
@@ -137,12 +136,13 @@ h1 span {
   margin: 50px;
 }
 
-hr{
-  width: 100%;
-  border: 1px solid #000000;
+hr {
+  width: 70%;
+  margin: 100px auto 10px auto;
+  border: 01px solid #ececec;
 }
 
-.text-download{
+.text-download {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -150,3 +150,42 @@ hr{
   gap: 30px 0;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 50px;
+}
+
+.item5 {
+  display: flex;
+}
+
+.footer p {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.footer ul li{
+  list-style-type: none;
+  padding: 10px 10px 10px 0;
+  margin: 0 0 0 -20px;
+}
+
+.R-IMG {
+  display: flex;
+  margin: -60px 0px 0px -15px;
+  width: 80px;
+}
+
+.footer .item5 {
+  margin-bottom: 166px;
+  display: flex;
+  gap: 20px;
+  width: 40px;
+}
+
+li a{
+  font-size: 12px;
+}
